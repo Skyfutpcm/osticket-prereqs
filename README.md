@@ -58,7 +58,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
       </ul>
     <li>To confirm everything is set accordingly, go to your browser in your VM and type in <b>127.0.0.1</b>, it should load the page to Internet Information Services</li>
       <ul>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/b6fdbb5f-73c6-4aaf-ac8c-3e9690303d7b" height="50%" width="50%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/pOKMBcK.png" height="50%" width="50%" alt="Disk Sanitization Steps"/></li>
       </ul>
   </ul>
 </p>
@@ -74,12 +74,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>From the Installation Files, download <b>PHP Manager</b> (PHPManagerForIIS_V1.5.0.msi) and <b>Rewrite Module</b> (rewrite_amd64_en-US.msi) </li>
     <li>Create a Folder in your VM's C Drive and name it <b>PHP</b></li>
       <ul>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/04098ba9-26d5-4291-9431-7d2fd3200fc4" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/QNgxkNf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
       </ul>
     <li>From the Installation Files, download the zip file <b>PHP 7.3.8</b> (php-7.3.8-nts-Win32-VC15-x86.zip) then unzip the contents into PHP folder we've made (C:\ PHP)</li>
       <ul>
         <li><b>NOTE:</b> If a warning sign appears in the downloading icon in your browser, it means the Microsoft Defender Smartscreen in your VM is preventing you from downloading the zip file. If this happens, navigate the file your downloads and click on <b>Keep</b></li>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/2be3abda-6e52-44df-b253-ab4006c199cc" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/ndKODud.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
       </ul>
     <li>From the Installation Files, download and install <b>VC_redist.x86.exe</b></li>
     <li>From the Installation Files, download and install <b>MySQL 5.5.62</b> (mysql-5.5.62-win32.msi)</li>
@@ -100,11 +100,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>Open <b>Internet Information Services (IIS) Manager</b> and run it as Administrator</li>
     <ul>
       <li><b>PHP Manager</b> and <b>URL Rewrite</b> should be found in our IIS Manager due to the PHP Manager and Rewrite Modules files we have downloaded initially </li>
-      <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/8392f072-ba16-43db-898e-aa807c93d4f3" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://i.imgur.com/vpcUc8F.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
     </ul>
     <li>Go to <b>PHP Manager</b> and click on <b>Register new PHP Version</b>, set the directory to the <b>php-cgi</b> file found in the PHP folder we've set in C Drive (C:\PHP)</li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/640439ed-5a37-470d-9451-836176f74ff8" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://i.imgur.com/v6PopIp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
     </ul>
     <li>Optional but Recommened: Refresh the IIS Manager Server by going to <b>Actions</b> and under <b>Manage Server</b> click on <b>Restart</b></li>
   </ul>
@@ -119,13 +119,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>From the Installation Files, download and install <b>osTicket v1.15.8.zip</b></li>
     <li>Extract the <b>upload</b> folder from the zip file and copy the folder into the directory <b>C:\inetpub\wwwroot</b> in your VM</li>
       <ul>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/0f1b83b3-86df-450c-bd22-e9369fcacf0b" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/LJ3Juvr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
       </ul>
     <li>Rename the upload folder we've copied into wwwroot to <b>osTicket</b>, then reload IIS Manager</li>
     <li>In IIS Manager, expand the connection <b>Sites</b> then <b>Default Web Site</b> to click and highlight <b>osTicket</b>. Then, navigate to <b>Browse Folder</b> and click on <b>Browser*.80 (http)</b></li>
     <li>The page for osTicket Installer should now pop up, if it does not, check your directories of your files and folders</li>
       <ul>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/0e213a5c-e82c-4e1c-b187-b6e53aeb9af2" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/YMiRm0C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
       </ul>
     <li>In IIS Manager, go to <b>osTicket</b> and click on <b>PHP Manager</b> and click on <b>Enable or disable extensions</b> and enable the following extensions</li>
       <ul>
@@ -144,9 +144,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <li>From the Installation Files, download and install <b>HeidiSQL</b></li>
       <ul>
         <li>Go through basic setup then launch HeidiSQL and create a New Session using the username "root" and password "Password1"</li>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/e4be70d7-c458-4274-95bb-6f53f8ecde98" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/LtnDo81.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
         <li>You should see this once connected</li>
-        <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/e04f8a37-4c5c-49da-b16b-c882470f2cdb" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+        <li><img src="https://i.imgur.com/76nan1k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
         <li>Create a Database and name it <b>osTicket</b></li>
       </ul>
     <li>Once connected, go back to osTicket Installer type in our username and password into the respected fields in Database Settings</li>
@@ -157,7 +157,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
       </ul>
     <li>Click <b>Install Now</b>, osTicket should now be fully installed on your VM!</li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/osticket-prereqs/assets/147654000/f48259ba-ba8a-4bce-9cbe-a300903de8b2" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
     </ul>
   </ul>
 </p>
